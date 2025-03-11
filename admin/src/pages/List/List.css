@@ -1,0 +1,63 @@
+.list-table-format {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    font-size: 14px;
+    border: 1px solid #e0e0e0;
+    width: 80vw;
+    background: #fff;
+    transition: all 0.3s ease;
+    padding-left: 15px;
+}
+.list-add p{
+  
+    font-size: 22px;
+
+}
+
+.list-add{
+    margin: 20px 20px;
+}
+
+
+/* Highlight the header row */
+.list-table-format.title {
+    background-color: #f1f1f1;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid #d4d4d4;
+}
+
+/* Styling for images */
+.list-table-format img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Make the table rows interactive */
+.list-table-format:hover {
+    background-color: #f9f9f9;
+    /* transform: scale(1.02); */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .list-table-format {
+        grid-template-columns: 1fr 3fr 1fr;
+        font-size: 12px;
+        gap: 15px;
+    }
+
+    .list-table-format img {
+        width: 45px;
+        height: 45px;
+    }
+    .list-table-format.title{
+        display: none;
+    }
+}
