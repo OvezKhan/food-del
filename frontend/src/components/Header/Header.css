@@ -4,6 +4,7 @@
     background: url('/header_img.png') no-repeat center;
     background-size: contain;
     position: relative;
+    border-radius: 4px;
 }
 
 .header-contents{
@@ -53,14 +54,22 @@
 
 
 @media (max-width:750px) {
-
+    .header {
+        height: 60vw; /* Increased height for mobile */
+        background-size: cover; /* Adjust background size */
+    }
         .header-contents{
             max-width:65%;
+
+            
         }
         .header-contents p{
             display: none;
+           
         }
 .header-contents button{
     padding: 2vw 4vw;
+    margin-top: 10px;
 }
+
 }
