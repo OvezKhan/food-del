@@ -3,7 +3,7 @@ import './Navbar.css'
 import { assets } from '../../assets/assets'
 import { Link, useNavigate } from 'react-router-dom';
 import { StoreContext } from '../../context/StoreContext';
-import footBiteLogo from '../assets/foot_bite_logo.webp';
+import logo from '../assets/logo.png';
 
 
 
@@ -22,9 +22,9 @@ const Navbar = ({setShowLogin }) => {
   const {getTotalCartAmount, token , setToken} = useContext(StoreContext);
   return (
     <div className='navbar'>
-      console.log("Image Path:", footBiteLogo);
+{/*       console.log("Image Path:", footBiteLogo); */}
 
-      <Link to='/'><img src={footBiteLogo} alt="logo" className='logo'/></Link>
+      <Link to='/'><img src={assets.logo} alt="logo" className='logo'/></Link>
 
       <ul className='navbar-menu'>
         <Link to='/' onClick={() => setMenu('home')} className={menu === 'home' ? "active":""}>home</Link>
