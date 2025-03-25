@@ -19,7 +19,7 @@ const Navbar = ({setShowLogin }) => {
   const {getTotalCartAmount, token , setToken} = useContext(StoreContext);
   return (
     <div className='navbar'>
-      <Link to='/'><img src={assets.logo} alt="logo" className='logo'/></Link>
+      <Link to='/'><img src={assets.foot_bite_logo.webp} alt="logo" className='logo'/></Link>
 
       <ul className='navbar-menu'>
         <Link to='/' onClick={() => setMenu('home')} className={menu === 'home' ? "active":""}>home</Link>
