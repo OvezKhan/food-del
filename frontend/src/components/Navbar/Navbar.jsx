@@ -22,6 +22,8 @@ const Navbar = ({setShowLogin }) => {
   const {getTotalCartAmount, token , setToken} = useContext(StoreContext);
   return (
     <div className='navbar'>
+      console.log("Image Path:", footBiteLogo);
+
       <Link to='/'><img src={footBiteLogo} alt="logo" className='logo'/></Link>
 
       <ul className='navbar-menu'>
