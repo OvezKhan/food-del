@@ -12,7 +12,7 @@ import axios from 'axios';
 
 const Order = () => {
   const [orders , setOrders] = useState([]);
-  const url = 'https://food-del-admin-jxy6.onrender.com';// change this to your backend url
+  const url = 'https://food-del-backend-ig5f.onrender.com';// change this to your backend url
   
 
   const fetchAllOrders = async () => {
