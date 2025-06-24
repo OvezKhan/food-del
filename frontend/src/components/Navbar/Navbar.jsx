@@ -24,7 +24,7 @@ const Navbar = ({setShowLogin }) => {
     <div className='navbar'>
 {/*       console.log("Image Path:", footBiteLogo); */}
 
-      <Link to='/'><img src={assets.logo} alt="logo" className='logo'/></Link>
+      <Link to='/'><img src={logo} alt="logo" className='logo'/></Link>
 
       <ul className='navbar-menu'>
         <Link to='/' onClick={() => setMenu('home')} className={menu === 'home' ? "active":""}>home</Link>
