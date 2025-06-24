@@ -3,7 +3,7 @@ import axios from 'axios';
 import './List.css';
 import {toast} from 'react-toastify';
 const List = () => {
-  const url = "http://localhost:3000";
+  const url = "https://food-del-admin-jxy6.onrender.com";
 
 
   const removeFood = async(foodId) => {

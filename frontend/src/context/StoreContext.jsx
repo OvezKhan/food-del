@@ -52,7 +52,7 @@ const StoreContextProvider = ( props ) => {
 
                 let itemInfo = food_list.find((product) => product._id === item);
 
-                if (itemInfo) { // ✅ Ensure item exists before accessing properties
+                if (itemInfo) { //  Ensure item exists before accessing properties
                     totalAmount += itemInfo.price * cartItems[item];
                 } else {
                     console.warn(`Item with ID ${item} not found in food_list`);
@@ -105,5 +105,5 @@ const StoreContextProvider = ( props ) => {
     );
 };
 
-// ✅ Make sure to export as default
+
 export default StoreContextProvider;
